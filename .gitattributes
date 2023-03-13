@@ -1,2 +1,0 @@
-videos/capstone.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/JudyMiroPanel.mp4 filter=lfs diff=lfs merge=lfs -text
