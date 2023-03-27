@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-  <script src="Script/script.js"></script>
+  <script type="type/javascript" src="Script/script.js"></script>
 </head>
 
 <body>
@@ -94,6 +94,7 @@
                                 <li>Name: Alexander Morales</li>
                                 <li>Age: 28</li>
                                 <li>Career Interests: UX/UI, Front End Development, and Web Development </li>
+                                <li>Languages: Java, JavaScript, React, Ruby on Rails, Git/Github, SQL </li>
 
                             </ul>
                         </div>
@@ -159,42 +160,115 @@
     <section id="Projects">
         <div class="container mt-3">
             <h1 class="text-center">Projects</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/nursingSim.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal07').style.display='block'"> Nursing Simulation Website  </h4>
-                            <div id="modal07" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                   
-                            <h2 class="w3-text-light-grey" style="text-align: left; ">Nursing Simulation</h2>
-                            <hr style="width:200px" class="w3-opacity">
-                            <p style="text-align: left;  padding-top: 50px;
-                            padding-right: 30px;
-                            padding-bottom: 50px;
-                            padding-left: 80px;"> 2020 brought a lot of new obstacles for humans across the world as COVID-19 turned our natural social atmospheres into isolated bubbles. While these new obstacles approached, students continued to complete their education virtually. However, students encountered limites with the essential real world experiences their career would bestow upon them. 
-                                The lack of real world situations had become a concern within the nursing program students. In a normal world, they would experience real life situations and get hands on experience in the hospitals. <br> <br>
-                            
-                                Myself and a group of Computer Science individuals took notice and felt the need to do something about it. We began to interview the nursing department faculty, as well as nursing students to discover the challenges that occured in their department. There needed to be a way in which students were able to gain real world experience through a virtual environment. <br><br>
-                            
-                                Through interviews and collaboration with the nursing department. We created a Virtual Simulation Website that were to be used for clinical scenarios. This simulation was a “choose your own path” journey for undergraduate nursing students -- which involved multiple scenarios that they would find in the real world. Through this website, students were able to continue their studies in a virtual environment.
-                            <br> <br>
-                                Through this experience, I learned the following:
-                                <li class = "open-body-bulletpoints"/>The ability to  conduct interviews
-                                <li class = "open-body-bulletpoints"/>Cross disciplinary collaboration 
-                                <li class = "open-body-bulletpoints"/>Front and back end coding through the design of Ruby on Rails (OOP)
-                            </p>
+                    <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active"onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('ComputerScience')"> Computer Science</button>
+            <button class="btn" onclick="filterSelection('SocialJustice')"> Social Justice</button>
+        </div>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="containerFilter">
+            <div class="filterDiv ComputerScience">
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/nursingSim.jpeg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal07').style.display='block'"> Nursing Simulation Website  </h4>
+                                <div id="modal07" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
+                       
+                                <h2 class="w3-text-light-grey" style="text-align: left; ">Nursing Simulation</h2>
+                                <hr style="width:200px" class="w3-opacity">
+                                <p style="text-align: left;  padding-top: 50px;
+                                padding-right: 30px;
+                                padding-bottom: 50px;
+                                padding-left: 80px;"> 2020 brought a lot of new obstacles for humans across the world as COVID-19 turned our natural social atmospheres into isolated bubbles. While these new obstacles approached, students continued to complete their education virtually. However, students encountered limits with the essential real world experiences their career would bestow upon them. 
+                                    The lack of real world situations had become a concern within the nursing program students. In a normal world, they would experience real life situations and get hands on experience in the hospitals. <br> <br>
+                                
+                                    Myself and a group of Computer Science individuals took notice and felt the need to do something about it. We began to interview the nursing department faculty, as well as nursing students to discover the challenges that occured in their department. There needed to be a way in which students were able to gain real world experience through a virtual environment. <br><br>
+                                
+                                    Through interviews and collaboration with the nursing department, we created a virtual simulation website that were to be used for clinical scenarios. This simulation was a “choose your own path” journey for undergraduate nursing students -- which involved multiple scenarios that they would find in the real world. Through this website, students were able to continue their studies in a virtual environment.
+                                <br> <br>
+                                    Through this experience, I developed the following skills:
+                                    <li class = "open-body-bulletpoints"/>Ruby on Rails Development
+                                    <li class = "open-body-bulletpoints"/>Backend and frontend Development
+                                    <li class = "open-body-bulletpoints"/>Cross disciplinary collaboration through interviews and meetings
+                                    
+                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                  <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/SandiaNationalLabs.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal08').style.display='block'">Social/Applied Cognitive Researcher</h4>
+                                <div id="modal08" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
+                                    <h2 class="w3-text-light-grey" style="text-align: left; ">Applied Social/Cognitive Researcher</h2>
+                                    <hr style="width:200px" class="w3-opacity">
+                                    <p class = "open-body-text"> 
+                                        The summer of 2020 brought a new birth of what was possible for virtual work. As the covid-19 pandemic hit across all parts of the world, humans quickly adapted to its circumstances. 
+                                        <br><br>
+                                        This new stage in the evolution of work brought the question of how virtual teams can effectively collaborate with one another via the computer screen. This question was introduced to me as I worked as an social/applied cognitive research assistant at Sandia National Laboratories under the supervision of <a href="https://maherou.github.io">Mike Heroux</a> and <a href="https://www.sandia.gov/-emraybo/staff/elaine-m-raybourn-ph-d/">Elaine Raybourn</a>. We specifically looked at how software virtual teams could effectively collaborate.
+                                        <br><br>
+                                        This project entailed gathering large ammounts of data and research that was related to software virtual teams. We used Github as our way to collect data. Through the use of Github, we created scholarly "templates" within the repository issues section. As we found interesting scholarly articles and findings, we would then post them onto our shared github repository. At the end of this experience, we created a central repository where individuals interested in understanding virtual collaboration could expand their knowledge. 
+                                        <br>
+                                        <br>
+                                        Through this experience, I developed the following skills:
+                                        <li class = "open-body-bulletpoints"/>Further skills in Git/Github
+                                        <li class = "open-body-bulletpoints"/>Extensive research in the topic of software virtual teams
+                                        <li class = "open-body-bulletpoints"/>Discovery in enhancing virtual team collaboration -- specifically in software teams
+                                        <li class = "open-body-bulletpoints"/>Virtual collaboration within an interdisciplinary community of Psychology, Sociology and Computer Science 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/ARL.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal02').style.display='block'">UX/UI Intern</h4>
+                                <div id="modal02" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
+                                    <h2 class="w3-text-light-grey" style="text-align: left; ">UX/UI Intern</h2>
+                                    <hr style="width:200px" class="w3-opacity">
+                                    <p class = "open-body-text"> 
+                                        Over the summer of 2021 I had the opportunity to intern as a User Experience and User Interface developer at the <a href="https://www.arl.psu.edu">Applied Research Laboratory</a> at Penn State. Due to the confidentiality of this project, I am not able to go into specifics on the project. However, I can speak about the things I achieved during this internship and broadly speak about the project. 
+    
+                                        The goal of this project was to help the end users navigate information within an email alerting system. After extensive interviews with the end users of the website, I was able to learn that navigating large amounts of important information embedded in the email was often difficult.
+    
+                                        Due to this finding, my project entailed making an automated HTML email which could highlight important phrases, and confidentiality levels of the information within the email. 
+                                        
+                                        <br>
+                                        <br>
+                                        My main accomplishments during this project involved creating an automated HTML email that used a Natural Language Processor (NLP) to color code important information within the email. 
+    
+                                        At the end of the internship, I was able to implement this new feature within the upcoming release of the website. We received positive feedback from the end users as they were able to easily navigate through large amounts of information that each email sent. 
+                                        <br>
+                                        <br>
+                                        Through this experience, I developed the following skills:
+                                        <li class = "open-body-bulletpoints"/> Natural Processing Languages (NLP)
+                                        <li class = "open-body-bulletpoints"/> Development of automated HTML emails
+                                        <li class = "open-body-bulletpoints"/> Development in JavaScript, CSS, and HTML
+                                        <li class = "open-body-bulletpoints"/> Use of Github/Git in a large scale environment
+                                        <li class = "open-body-bulletpoints"/> Cross collaboration between designers, developers, and customers
+                                        <li class = "open-body-bulletpoints"/> User experience skills through conductions of interviews and data collection
+    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
                         
                           <video class = "card-img-top" width="400" controls poster="images/capstone.png">
-                            <source src="Videos/capstone.mp4" type="Video/mp4" alt="Card image" style="width:100%">
-                            <source src="Videos/capstone.ogg" type="Video/ogg">
+                            <source src="https://github.com/amoralesg001/Html_Portfolio-/blob/260148105a2a0b64962337451b396a5dd4702819/Videos/capstone.mp4" type="Video/mp4" alt="Capstone image" style="width:100%">
                           </video>
                           <!-- <img class="card-img-top" src="images/capstone.png" alt="Card image" style="width:100%"> -->
                         <div class="card-body">
@@ -208,72 +282,46 @@
                                     <br><br>This  project intended to break down the ethical, technical and social dilemma of recidivism algorithms within the court system. Further, it proceeded to analyze societies misconception and blind trust on complex algorithms. I look at the example of COMPAS and analyze its algorithm dataset. At the end, I provide future steps for recidivism prediction algorithms.
                                     
                                     <br><br>
-                                    Throughout this project, I learned the following: 
-                                    <li class = "open-body-bulletpoints"/>How to conduct interviews 
-                                    <li class = "open-body-bulletpoints"/>How to conduct scientific research 
-                                    <li class = "open-body-bulletpoints"/>How to display data through Jupyter notebooks and the use of the Python language
-                                    <li class = "open-body-bulletpoints"/>How to present in front of a large audience 
+                                    Through this experience, I developed the following skills:
+                                    <li class = "open-body-bulletpoints"/>Conducting Interviews
+                                    <li class = "open-body-bulletpoints"/>Jupter Notebooks and Python
+                                    <li class = "open-body-bulletpoints"/>Extensive scientific research 
+                                    <li class = "open-body-bulletpoints"/>How to present in front of a large crowd
                                     
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                  
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/inspire.png" alt="Card image" style="width:100%">
+                    <div class="card-body" >
+                        <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal01').style.display='block'"> Inspire Software Engineer 
+                        </h4>
+                        <div id="modal01" class="w3-modal w3-black w3-animate-zoom"  onclick="this.style.display='none'">
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <!-- <video class = "card-img-top" width="400" controls poster="images/judyHeumanMiro.png">
-                            <source src="videos/JudyMiroPanel.mp4" type="video/mp4" alt="Card image" style="width:100%">
-                            <source src="videos/JudyMiroPanel.ogg" type="video/ogg">
-                          </video> -->
-                          <img class="card-img-top" src="images/judyHeumanMiro.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal05').style.display='block'">Disability Activism Panel</h4>
-                            <div id="modal05" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                            <h2 class="w3-text-light-grey" style="text-align: left; ">A Conversation about Disability Awareness, Rights, and Activism with Judy Heumann and Dr. Miro Griffiths </h2>
+
+                            <h2 class="w3-text-light-grey" style="text-align: left; ">INSPIRE Software Engineer Intern </h2>
                             <hr style="width:200px" class="w3-opacity">
                             <p class = "open-body-text"> 
-                                I had the opportunity to be a facilitator for two prominent disability activists. This event had more than 200 individuals attend. A Conversation about Disability Awareness, Rights, and Activism with Judy Heumann and Dr.Miro Griffiths highlighted the ongoing fight for equality within the disability community through a global lens. It brought people from different parts of the world together to talk about how individuals can becomee allies for the disability activism movement. 
+                                Over the Summer of 2023, I had the opportunity to intern at <a href= "https://www.inspiresleep.com">Inspire Medical Systems</a> software development team. Under the supervision of the software development team, I was given the responsibility of doing extensive research on DevOps tools. The purpose of this research was to see how we could transition Inspires recent software development projects into an environment that would allow for Continue Integration (CI) and Continuous Deployment (CD). The result of this approved proposal would allow more swift and efficient deployments on new software products within Inspires company. 
+                                <br>
+                                <br>
+                                My accomplishments involved creating a build pipeline through Azure DevOps that would allow for automatic testing and deployment within each new push of code. Inspires software team integrated this new tool into their most recent software deployment. As a result, programmers are able to automatically test and deploy code through the ease of a GitHub push. 
                                 <br> <br>
-                                Throughout this experience, I learned the following: 
-                                <li class = "open-body-bulletpoints"/>How to facilitate a panel event  
-                                <li class = "open-body-bulletpoints"/>How to reach out to world-renown individuals
-                                <li class = "open-body-bulletpoints"/>How to organize an event that had more than 200 individuals attend
-
+                                Through this experience, I developed the following skills:
+                                <li class = "open-body-bulletpoints"/> How to build software pipelines with Azure DevOps
+                                <li class = "open-body-bulletpoints"/> Collaboration with a large software development team 
+                                <li class = "open-body-bulletpoints"/> Integration of Continuous Development(CD) and Continuous Integration(CI) Tools within a software environment                    
                             </p>
-                            </div>
+                            <!-- <img src="images/inspireInterns.jpeg" class="imagePorfolioProject" alt="Inspire Medical Systems Image" width="300" height="200"> -->
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/inspire.png" alt="Card image" style="width:100%">
-                        <div class="card-body" >
-                            <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal01').style.display='block'"> Inspire Software Engineer 
-                            </h4>
-                            <div id="modal01" class="w3-modal w3-black w3-animate-zoom"  onclick="this.style.display='none'">
-
-                                
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">INSPIRE Software Engineer Intern </h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text"> 
-                                    Over the Summer of 2023, I had the opportunity to intern at Inspire Medical Systems software development team. Under the supervision of the software development team, I was given the responsibility of doing extensive research on DevOps tools. The purpose of this research was to see how we could transition Inspires recent software development projects into an environment that would allow for Continue Integration (CI) and Continuous Deployment (CD). The result of this approved proposal would allow more swift and efficient deployments on new software products within Inspires company. 
-                                    <br>
-                                    <br>
-                                    My accomplishments involved creating a build pipeline through Azure DevOps that would allow for automatic testing and deployment within each new push of code. Inspires software team integrated this new tool into their most recent software deployment. As a result, programmers are able to automatically test and deploy code through the ease of a GitHub push. 
-                                    <br> <br>
-                                    Through this project, I learned the following:
-                                    <li class = "open-body-bulletpoints"/> How to build software pipelines with Azure DevOps
-                                    <li class = "open-body-bulletpoints"/> The ability to communicate and collabore with a software development team 
-                                    <li class = "open-body-bulletpoints"/> How to integrate Continuous Development and Continuous Integration Tools within a software environment                    
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
@@ -284,88 +332,79 @@
                                 <h2 class="w3-text-light-grey" style="text-align: left; ">OLEB MEDIA</h2>
                                 <hr style="width:200px" class="w3-opacity">
                                 <p class = "open-body-text">  
-                                    Within the span of a few months, I had the opportunity to do a short term internship with Oleb Media as a user experience research intern. I worked one on one with the founder of the company, Belo Cipriani as he mentored me on the process of a customer identification case study.  
+                                    Within the span of a few months, I had the opportunity to do a short term internship with <a href="https://www.olebmedia.com">Oleb Media</a> as a user experience research intern. I worked one on one with the founder of the company, <a href="https://belocipriani.com">Belo Cipriani</a> as he mentored me on the process of a customer identification case study.  
 
                                     <br> <br>
-                                    My project with Oleb Media sought to answer this question: Are young professionals willing to pay for a digital inclusion course. Through the use of surveys that were sent through social media and via email, we received a sample group of respondents that allowed us to analyze that very question. As a result of this analysis, we were able to readjust how Oleb Media was advertising their training courses, and target specific groupe of people who may be interested in the course. 
-                                    Through this project, I learned the following:
-                                    <li class = "open-body-bulletpoints"/> The ability to create a customer identification case study 
-                                    <li class = "open-body-bulletpoints"/> The ability to analyze and interpret case studies 
-                                    <li class = "open-body-bulletpoints"/> The ability to readjust marketing strategies base on the UX case study              
-                               
-                        
-                        
+                                    My project with Oleb Media sought to answer this question: Are young professionals willing to pay for a digital inclusion course? Through the use of surveys we received a sample group of respondents that allowed us to analyze that very question. As a result of this analysis, we were able to readjust how Oleb Media was advertising their training courses, and target specific groups of people who may be interested in the course. 
+                                    Through this experience, I developed the following skills:
+                                    <li class = "open-body-bulletpoints"/> User experience research 
+                                    <li class = "open-body-bulletpoints"/> User experience marketing tactics    
+                                    <li class = "open-body-bulletpoints"/> Customer identification case studies
+                                    <li class = "open-body-bulletpoints"/> Analyzation and interpretation of case study data    
                                 </p>
+                                <!-- <img src="images/belo.jpeg" class="imagePorfolioProject" alt="Belo Image"> -->
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/ARL.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal02').style.display='block'">UX/UI Intern</h4>
-                            <div id="modal02" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">Applied Research Laboratories UX/UI Intern</h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text"> 
-                                    Over the summer of 2021 I had the opportunity to intern as a User Experience and User Interface developer at the Applied Research Laboratory at Penn State. Due to the confidentiality of this project, I am not able to go into specifics on the project. However, I can speak about the things I achieved during this internship and broadly speak about the project. 
-
-                                    The goal of this project was to help the end users navigate information within an email alerting system. After extensive interviews with the end users of the website, I was able to learn that navigating large amounts of important information embedded in the email was often difficult.
-
-                                    Due to this finding, my project entailed making an automated HTML email which could highlight important phrases, and confidentiality levels of the information within the email. 
-                                    
-                                    <br>
-                                    <br>
-                                    My main accomplishments during this project involved creating an automated HTML email that used a Natural Language Processor (NLP) to color code important information within the email. 
-
-                                    At the end of the internship, I was able to implement this new feature within the upcoming release of the website. We received positive feedback from the end users as they were able to easily navigate through large amounts of information that each email sent. 
-                                    <br>
-                                    <br>
-                                    Through this project, I learned the following:
-                                    <li class = "open-body-bulletpoints"/>Further skills and development in JavaScript, CSS, and HTML.
-                                    <li class = "open-body-bulletpoints"/> Development of automated HTML emails
-                                    <li class = "open-body-bulletpoints"/> The use of Natural Processing Languages 
-                                    <li class = "open-body-bulletpoints"/>Conducting interviews on customers who used the website
-                                    <li class = "open-body-bulletpoints"/>Skills in User Experience and User Interface implementation 
-                                    <li class = "open-body-bulletpoints"/> Cross collaboration between designers, developers, and customers
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <iframe src="https://www.youtube.com/embed/s1KcRdtSc8Q" title="Diverse Bodies, Beautiful Minds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </iframe>
-                        <div class="card-body">
-                            <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal04').style.display='block'">Diverse Bodies, Beautiful Minds</h4>
-                            <div id="modal04" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">Diverse Bodies, Beautiful Minds</h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text"> 
-                                    Over the academic year of 2022-2023 I was a Co-Director for a nonprofit student run documentary team called Extending the Link (ETL). ETL’s project entailed the creation of an interactive film gallery. The interactive film gallery titled Diverse Bodies, Beautiful Minds: Voices of Disability Activism included insights and stories about Disability Activism. Through four short films, we showcased the voices of individuals that identify as disabled and non-disabled - establishing a narrative of authenticity and action. As a community, we joined together to learn through film and dialogue. While this gallery begins by highlighting the foundational goals of disability activism and key forms of resistance, it concludes with an exploration of intersectionality and allyship. 
-
-                                    <br><br>Diverse Bodies, Beautiful Minds: Voices of Disability Activism, presents a non-traditional way of interacting and viewing film. One which uses physical space as a symbol of reflection that each member must take when presenting an individual's story and expertise. This film uses no alternative footage, but rather focuses on the footage of the interviewers as a means to emphasize the need to focus on the powerful insights each interviewer has to bring. Additionally, this film intends to find alternative ways in which we can incorporate accessibility through the use of captioning, audio captions, and ASL interpretations.
-                                    <br><br>
-                                    Throughout this project I learned the following
-                                    <li class = "open-body-bulletpoints"/>How to conduct interviews 
-                                    <li class = "open-body-bulletpoints"/>How to use film and edit documentary style films 
-                                    <li class = "open-body-bulletpoints"/>How to manage a team of more than 30 individuals
-                                    <li class = "open-body-bulletpoints"/>How to cross collaborate with each team within our organization whom included marketing, videography, research, and outreach in order to work together to complete our goal
-                                    <li class = "open-body-bulletpoints"/>Organize an event space in which more than 150 people attended. 
-                                    
-                                    
-                                </p>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-              
+                </div>    
             </div>
+        </div>
+            <div class="filterDiv SocialJustice">
+                <div class="row">
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <iframe src="https://www.youtube.com/embed/s1KcRdtSc8Q" title="Diverse Bodies, Beautiful Minds" frameborder="0" height="165" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </iframe>
+                            <div class="card-body">
+                                <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal04').style.display='block'">Diverse Bodies, Beautiful Minds</h4>
+                                <div id="modal04" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
+                                    <h2 class="w3-text-light-grey" style="text-align: left; ">Diverse Bodies, Beautiful Minds</h2>
+                                    <hr style="width:200px" class="w3-opacity">
+                                    <p class = "open-body-text"> 
+                                        Over the academic year of 2022-2023 I was a Co-Director for a nonprofit student run documentary team called <a href= "http://www.extendingthelink.com">Extending the Link</a>(ETL). ETL’s project entailed the creation of an interactive film gallery. The interactive film gallery titled Diverse Bodies, Beautiful Minds: Voices of Disability Activism included insights and stories about Disability Activism. Through four short films, we showcased the voices of individuals that identify as disabled and non-disabled - establishing a narrative of authenticity and action. As a community, we joined together to learn through film and dialogue. While this gallery begins by highlighting the foundational goals of disability activism and key forms of resistance, it concludes with an exploration of intersectionality and allyship. 
+    
+                                        <br><br>Diverse Bodies, Beautiful Minds: Voices of Disability Activism, presents a non-traditional way of interacting and viewing film. One which uses physical space as a symbol of reflection that each member must take when presenting an individual's story and expertise. This film uses no alternative footage, but rather focuses on the footage of the interviewers as a means to emphasize the need to focus on the powerful insights each interviewer has to bring. Additionally, this film intends to find alternative ways in which we can incorporate accessibility through the use of captioning, audio captions, and ASL interpretations.
+                                        <br><br>
+                                        Through this experience, I developed the following skills:
+                                        <li class = "open-body-bulletpoints"/>How to conduct interviews 
+                                        <li class = "open-body-bulletpoints"/>How to film and edit documentary style films 
+                                        <li class = "open-body-bulletpoints"/>How to manage a team of more than 30 individuals
+                                        <li class = "open-body-bulletpoints"/>How to cross collaborate with each team within our organization whom included marketing, videography, research, and outreach in order to work together to complete our goal
+                                        <li class = "open-body-bulletpoints"/>Organize an event space in which more than 150 people attended.                                   
+                                    </p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                              <img class="card-img-top" src="images/judyHeumanMiro.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="cursor:grab" onclick="document.getElementById('modal05').style.display='block'">Disability Activism Panel</h4>
+                                <div id="modal05" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
+                                <h2 class="w3-text-light-grey" style="text-align: left; ">A Conversation about Disability Awareness, Rights, and Activism with Judy Heumann and Dr. Miro Griffiths </h2>
+                                <hr style="width:200px" class="w3-opacity">
+                                <p class = "open-body-text"> 
+                                    I had the opportunity to be a facilitator for two prominent disability activists. This event had more than 200 individuals attend. <em>A Conversation about Disability Awareness, Rights, and Activism with <a href="https://judithheumann.com">Judy Heumann</a> and <a href="https://essl.leeds.ac.uk/sociology/staff/1040/dr-miro-griffiths">Dr. Miro Griffiths </a></em> highlighted the ongoing fight for equality within the disability community through a global lens. It brought people from different parts of the world together to talk about how individuals can become allies for the disability activism movement. 
+                                    <br> <br>
+                                    Through this experience, I developed the following skills
+                                    <li class = "open-body-bulletpoints"/>Facilitating events
+                                    <li class = "open-body-bulletpoints"/>Virtual communication and connections with world-renown activists
+                                    <li class = "open-body-bulletpoints"/>Organization of large events through research, communication, collaboration and research
+    
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+
+            </div>
+        </div>
+
             
     </section>
 
@@ -398,10 +437,10 @@
                             <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success mt-3">Contact Me</button>
-                    </form>
-                   
-                    
+                    </form>                   
                 </div>
+                </div>
+    
 
             </div>
         </div>
@@ -420,5 +459,51 @@
     </footer>
         
 </body>
-
+<script>filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+    
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }</script>
 </html>
