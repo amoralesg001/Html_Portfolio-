@@ -143,7 +143,7 @@ padding-left: 80px;
   
   .filterDiv {
     float: left;
-    color: #ffffff;
+    color: #f1f1f1;
      /* width: 100px;
     line-height: 100px;
     text-align: center;
@@ -175,7 +175,7 @@ padding-left: 80px;
   
   /* Add a dark background to the active button */
   .btn.active {
-    background-color: #666;
-    color: white;
+
+
   }
   
