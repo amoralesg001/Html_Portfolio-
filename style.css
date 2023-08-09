@@ -1,27 +1,145 @@
+/* text css above hero image*/
+.h1HomeText{
+  font-size: 10vw;
+  font-family: "ivypresto-display", serif;
+  font-weight: 600;
+  font-style: Regular;
+  color: #000000;
+  position: relative; 
+  text-align: center;
+  padding: 20px;
+  display: inline-block; 
+  z-index: 0;/* Add a black border around each letter */
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.h2HomeText{
+  font-size: 4vw;
+  font-family: "ivypresto-display", serif;
+  font-style: normal;
+  color: #f9f3df;
+  position: relative; 
+  text-align: center; 
+  display: inline-block; 
+  z-index: 0;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  display: block; 
+}
+
+.h3Header{
+font-size: 7vw;
+font-family: ivypresto-display, serif;
+font-weight: 800;
+font-style: normal;
+color: #f9f3df;
+  position: relative; 
+  display: inline-block; 
+  z-index: 0;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  display: inline-block; 
+}
+
+.h3AboutMeDescription{
+  font-size: 4vw;
+  font-family: ivypresto-display, serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #f9f3df;
+    position: relative; 
+    display: inline-block; 
+    z-index: 0;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    display: inline-block; 
+  }
+
+  /* Hide the "See Less" button initially */
+#seeLessBtn {
+  display: none;
+}
+
+/* Circular framed photography */
+.photo-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Adjust size as needed */
+  padding-bottom: 80%; /* Maintain a square aspect ratio */
+  border-radius: 50%;
+  margin: 0 auto;
+  background: url('images/IMG_8133.jpg') center top / cover no-repeat;
+}
+
+.circular-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Position the navigation on top of the image */
+.container {
+  position: relative;
+}
+
+/* Add a gray background color with some padding */
+.articleBody {
+  font-family: Arial;
+  padding: 20px;
+  background: #f9f3df;
+}
+
+/* Header/article Title */
+.articleHeader {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #f9f3df;
+}
+
+/* Fake image */
+.articleimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column {   
+  float: left;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column{   
+    width: 100%;
+    padding: 0;
+  }
+}
 
 /* hero background image */
 .bgimage {
+    padding-top: 80px; /* Adjust as needed */
     height:100vh;
     background: url('images/newHome.jpg');
     background-size:cover;
     position:relative;
+    
 }
 
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
+
 .hero_desc {
     font-size: 2rem;
 }
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-}
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;
@@ -33,8 +151,13 @@
     margin-right: auto;
 }
 /* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
+.navbarScroll{
     background-color: black;
+    background-color: transparent; /* Set a transparent background for the navigation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 /* Art section css */
 .ArtText.card {
@@ -89,7 +212,7 @@
   opacity: 1;
 }
 .imageCardText{
-  color: rgb(0, 0, 0);
+  color:  #ffffff;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -106,13 +229,25 @@
   }
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
+.w3-modal {
+  background-color:#f9f3df; /* Adjust the last value (0.5) to set the opacity */
+}
+
+.overlay {
+  background-color:#f3e1c9;
+}
+
+.imageCardText {
+ /* Replace with your preferred system font */
+  font-weight: bold;
+}
 
 .card-body:hover {opacity: 1}
 .card:hover .ArtIcon {
-    color: #008000;
+    color: #f3e1c9;
 }
 .ArtText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #f3e1c9;
 }
 .row {
     display: -ms-flexbox; /* IE10 */
@@ -121,18 +256,25 @@
     flex-wrap: wrap;
     padding: 0 4px;
   }
-  .container .box{
+  .box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
   }
-  .container .box .dream{
+  .box .dream {
     display: flex;
     flex-direction: column;
     width: 32.5%;
-  }
-  .container .box .dream img{
+    margin-right: 10px; /* Add margin between columns */
+    margin-bottom: 15px; /* Add margin between rows */
+}
+
+/* Clear margin for the last item in each row */
+.box .dream:nth-child(3n) {
+    margin-right: 0;
+}
+  .box .dream img{
     width: 100%;
     padding-bottom: 15px;
     border-radius: 5px;
@@ -142,12 +284,13 @@
 .social-icons {
     font-size: 36px;
     cursor: pointer;
+    text-align: center;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #c8ccc8;
+    color:  #FFAA5C;
 }
 .fab {
-    color: #000000;
+    color: #f9f3df;
 }
 /* footer styling */
 #footer {
@@ -182,7 +325,7 @@ padding-left: 80px;
     line-height: 100px;
     text-align: center;
     margin: 2px; */
-    display: none; Hiddden by default
+    display: none; 
     height: 280px;
     cursor: pointer;
   }
@@ -208,9 +351,92 @@ padding-left: 80px;
     background-color: #ddd;
   }
   
-  /* Add a dark background to the active button */
-  .btn.active {
 
 
+  .article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
+  .article-content {
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .article-content {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .article-content p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .article-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1; /* Add this line to place the navigation behind the hero text */
+  
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+
+    /* Resize the custom hamburger icon to fit within the navbar */
+.navbar-toggler img {
+  max-width: 30px; /* Set the maximum width to control the size */
+  height: auto; /* Maintain the aspect ratio */
+}
+  
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  .navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-family: "ivypresto-display", serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+  /* Show the navbar on top */
+  .navbarScroll {
+    transform: translateY(0);
+  }
+  
+  /* Hide the navbar when scrolling down */
+  .navbarScroll.scrolled {
+    transform: translateY(-100%);
+  }

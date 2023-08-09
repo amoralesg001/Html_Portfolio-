@@ -1,14 +1,22 @@
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+function filterSelection(category) {
+  var projects = document.querySelectorAll('.portfolioContent');
+
+  if (category === 'all') {
+    projects.forEach(function(project) {
+      project.style.display = 'block';
+    });
+  } else {
+    projects.forEach(function(project) {
+      if (project.classList.contains(category)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
   }
 }
+
+
 
 // Show filtered elements
 function w3AddClass(element, name) {
@@ -45,3 +53,17 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+const navbar = document.querySelector(".navbarScroll");
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navbar.classList.remove("scrolled");
+  } else {
+    navbar.classList.add("scrolled");
+  }
+  prevScrollpos = currentScrollPos;
+};
+

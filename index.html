@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xvl0qil.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  
+  <link rel="stylesheet" href="style.css">
+
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,161 +17,197 @@
   <script type="type/javascript" src="Script/script.js"></script>
 </head>
 
-<body>
-    
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" style="color: rgba(32, 31, 31, 0.568);" href="#">Alex Morales Garcia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home" style="color: rgba(32, 31, 31, 0.568);">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: rgba(32, 31, 31, 0.568);">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Art" style="color: rgba(32, 31, 31, 0.568);">Photography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects" style="color: rgba(32, 31, 31, 0.568);">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: rgba(32, 31, 31, 0.568);">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
+<body >
     
     <!-- main banner -->
     <section class="bgimage" id="home">
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <!-- Move the toggler to the end of the flex container -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img src="images/Icons/hamburgerMenu .png">
+                </button>
+                <!-- Use flex-grow-1 to make the brand and menu take up all available space -->
+                <div class="flex-grow-1"></div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home" style="color: rgb(0, 0, 0);">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="color: rgb(0, 0, 0);">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Art" style="color: rgb(0, 0, 0);">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Projects" style="color: rgb(0, 0, 0);">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" style="color: rgb(0, 0, 0);">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container-fluid">
             <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hello, this is Alexander Morales Garcia </h2>
-                <p class="hero_desc"> Life Long Learner <br> Programmer <br> Artist </p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class = "h1HomeText" style="color:white;">Alexander Morales Garcia</h1>
+                <h2 class = "h2HomeText" style="color:white;">Life Long Learner</h2>
+                <h2 class = "h2HomeText" style="color:white;">Programmer</h2>
+                <h2 class = "h2HomeText" style="color:white;">Artist</h2>
+                <div class="social-icons mt-4"  position = "relative">
+                    <a href="https://www.instagram.com/testing.1437/" target="_blank"><i class="fab fa-instagram" ></i></a>
+                    <a href="https://www.linkedin.com/in/alex-morales-garcia-99b035154/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/amoralesg001" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
             </div>
             </div>
         </div>
     </section>
 
-      <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.instagram.com/testing.1437/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/alex-morales-garcia-99b035154/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/amoralesg001" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-left">About Me</h1>
+        <div class="container mt-4 pt-4" style = "background-color: #f3e1c9;">
+            <h3 class="h3Header" style = "color:white">About Me</h3>
             <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/Alex.png" class= "imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> 
-                        Welcome to a snippet of who I am. I hope this website introduces my multiple passions, and the ways I wish to integrate all of who I am into a career.
-                        
-                        This website is intended to encompass all parts of who I am. I love being able to collaborate and create with people around me. Computer programming has been an incredible outlet to do this. However, there are many ways in which I do this  -- such as creating social justice documentaries, organizing events and making user experience studies. All these fundamental moments in my life have allowed me to use my interdisciplinary experiences to create opportunities that involve my computer science knowledge along with my social persona. I hope to continue to do this in whichever career I enter.
-                         
-                        
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Alexander Morales</li>
-                                <li>Age: 23</li>
-                                <li>Career Interests: UX/UI, Front End Development, and Web Development </li>
-                                <li>Languages: HTML, CSS, Java, JavaScript, React, Ruby on Rails, Git/Github, SQL </li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Education: College of Saint Benedict and Saint John's University</li>
-                                <li>Degree: Computer Science and Psychology</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                       <p> Please continue to explore this website and get an in-depth overview of the projects I have worked on and the things I like to do in my free time.</p>
-                    </div>
-                </div>
+            <div class="col-lg-12">
+                    <h3 class = "h3AboutMeDescription"  style = "color:white"> 
+                        Step into my world, where passion meets pixels and creativity takes flight.
+                        This website is my canvas, showcasing the fusion of my passions and the symphony of my skills.
+                    </h3>
             </div>
+            <div class="col-lg-8">   
+                <h3 class="h3Header" style = "color:white">Collaboration is my heartbeat</h3> 
+            </div>
+                    <div class="col-md-8">
+                            <h3 class = "h3AboutMeDescription"  style = "color:white"> 
+                               whether I'm crafting code or crafting change through social justice documentaries and dynamic events.
+                                I thrive on bridging disciplines, infusing computer science with a dash of my social persona.
+                         </h3>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="about-content">
+                                <!-- Circular framed photography -->
+                                <div class="photo-frame"></div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" style ="text-align: center;"">
+                        <h3 class="h3Header" style ="text-align: center; font-size: 4vw; color:white;">
+                            |UX/UI Design| |Web Development| |Storytelling|
+                        </h3>
+                    </div>
+   
+            <div class="col-md-12 mt-4 align-middle">
+                        <h3 class = h3AboutMeDescription style="text-align: center;font-size: 4vw; color:white;">
+                            I'm skilled in UX/UI, Front End Development, and Web Development. Proficient in HTML, CSS, Java, JavaScript, React, Ruby on Rails, and Git/Github
+                       </h3>
+                       <h3 class = h3AboutMeDescription style="text-align: center;font-size: 4vw; color:white;">
+                        Dual majored in Computer Science and Psychology at the College of Saint Benedict and Saint John's University, I've woven a tapestry bridging minds and machines.
+                   </h3>
+            </div>
+
+</div>
+</div>
     </section>
     <!-- Art section-->
     <section id="Art">
         <div class="container mt-4 pt-4">
-            <h1 class="text-left">Photography </h1>
-            <div class="col-lg-8">
-                <p> 
-                    I love to take photos in my free time ! Photographs is just one of many ways we can use images to tell a story. Here are some of my photographs:
-
-                    
-                </p>
-            </div>
-        <div class="box">
-            <div class = "dream">
-                <img src = "images/19.JPG" >
-                <img src = "images/14.JPG">
-                <!-- <img src = "images/3.JPG"> -->
-                <!-- <img src = "images/4.JPG">
-                <img src = "images/14.JPG">
-                <img src = "images/18.JPG"> -->
+           
+            <div class="row mt-4">
+            <div class="col-lg-6" style="background-color: white;">
+                <h3 class="h3Header" style ="color: #f3e1c9;">|Capturing Moments| </h3>
+                <h3 class="h3Header">|Crafting Stories| </h3>
             </div>
             
-            <div class = "dream">
-                <img src = "images/5.JPG">
-                <img src = "images/6.JPG">
-                <!-- <img src = "images/7.JPG"> -->
-                <!-- <img src = "images/8.JPG">
-                <img src = "images/15.JPG">
-                <img src = "images/19.JPG"> -->
+            <div class="col-lg-6">
+                <h3 class = h3AboutMeDescription style ="color: #f3e1c9;">
+                   Photography is my passport to creativity, where every click freezes a moment in time and every frame tells a unique tale.
+
+                   From the vibrant hues of nature to the intricate details of urban life, my lens becomes a bridge between reality and imagination.
+                </h3>
             </div>
+            <div class="col-lg-12">
+            <h3 class = h3AboutMeDescription> 
+            With each shot, I strive to reveal the unseen, evoke emotions, and spark connections.
 
-            <div class = "dream">
-                <img src = "images/3.JPG">
-                <img src = "images/11.JPG">
-                <!-- <img src = "images/12.JPG"> -->
-                <!-- <img src = "images/13.JPG">
-                <img src = "images/16.JPG">
-                <img src = "images/17.JPG"> -->
-
-
+            Whether it's the play of light and shadow or the candid expressions of people, photography allows me to explore the beauty that surrounds us and uncover stories that often go unnoticed.
+            </h3>
             </div>
         </div>
-    </div>
+
+        <div class="container mt-4 pt-4">
+            <div class="box">
+                <div class="dream">
+                    <img src="images/5.JPG">
+                    <img src="images/23.JPG">
+                    <img src="images/14.JPG">
+                </div>
+        
+                <div class="dream">
+                    <img src="images/13.JPG">
+                    <img src="images/12.JPG">
+                    <img src="images/11.JPG">
+                </div>
+        
+                <div class="dream">
+                    <img src="images/21.JPG">
+                    <img src="images/8.JPG">
+                    <img src="images/22.JPG">
+                </div>
+        
+                <!-- More rows of images... -->
+                
+                <!-- Hide additional rows initially -->
+                <div class="dream" style="display: none;">
+                    <img src="images/6.JPG">
+                    <img src="images/18.JPG">
+                    <img src="images/4.JPG">
+                </div>
+        
+                <div class="dream" style="display: none;">
+                    <img src="images/3.JPG">
+                    <img src="images/2.JPG">
+                    <img src="images/1.JPG">
+                </div>
+        
+                <div class="dream" style="display: none;">
+                    <img src="images/16.JPG">
+                    <img src="images/7.JPG">
+                    <img src="images/6.JPG">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style ="text-align: center;"">
+        <button id="toggleImagesBtn" onclick="toggleImages()"  style=" border: none; background: none;">
+            <h3 class="h3Header" id="toggleButtonText" style="text-align:center; color:#f3e1c9;">See More</h3>
+        </button>
+        </div>
+        
+</div>
+
     </section>
 
     <!-- portfolio section-->
     <section id="Projects">
+    <div class="container mt-4 pt-4" style = "background-color: #f3e1c9;">
         <div class="container mt-3">
-            <h1 class="text-center">Projects</h1>
-                    <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="btn active"onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('ComputerScience')"> Computer Science</button>
-            <button class="btn" onclick="filterSelection('SocialJustice')"> Social Justice</button>
+            <h3 class="h3Header" style="color:white">Projects</h3>
         </div>
+<!--         
+                    Control buttons
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+                        <button class="btn" onclick="filterSelection('ComputerScience')">Computer Science</button>
+                        <button class="btn" onclick="filterSelection('SocialJustice')">Social Justice</button>
+                    </div> -->
                 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="containerFilter">
-            <div class="filterDiv ComputerScience">
+        
                 <div class="row">
-                    <div class="col-lg-4 mt-4">
+                    <div class="col-lg-4 mt-4 ComputerScience">
                         <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal07').style.display='block'">
                             <div class = "imageContainer">
                                 <img class="card-img-top" src="images/nursingSim.jpeg" alt="Card image" style="width:100%">
@@ -179,32 +216,11 @@
                                 </div>
                             </div>
                         </div>
-                                <div id="modal07" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                       
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">Nursing Simulation</h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p style="text-align: left;  padding-top: 50px;
-                                padding-right: 30px;
-                                padding-bottom: 50px;
-                                padding-left: 80px;"> 2020 brought a lot of new obstacles for humans across the world as COVID-19 turned our natural social atmospheres into isolated bubbles. While these new obstacles approached, students continued to complete their education virtually. However, students encountered limits with the essential real world experiences their career would bestow upon them. 
-                                    The lack of real world situations had become a concern within the nursing program students. In a normal world, they would experience real life situations and get hands on experience in the hospitals. <br> <br>
-                                
-                                    Myself and a group of Computer Science individuals took notice and felt the need to do something about it. We began to interview the nursing department faculty, as well as nursing students to discover the challenges that occured in their department. There needed to be a way in which students were able to gain real world experience through a virtual environment. <br><br>
-                                
-                                    Through interviews and collaboration with the nursing department, we created a virtual simulation website that were to be used for clinical scenarios. This simulation was a “choose your own path” journey for undergraduate nursing students -- which involved multiple scenarios that they would find in the real world. Through this website, students were able to continue their studies in a virtual environment.
-                                <br> <br>
-                                    Through this experience, I developed the following skills:
-                                    <li class = "open-body-bulletpoints"/>Ruby on Rails Development
-                                    <li class = "open-body-bulletpoints"/>Backend and frontend Development
-                                    <li class = "open-body-bulletpoints"/>Cross disciplinary collaboration through interviews and meetings
-                                    
-                                </p>
-                                </div>
-                        </div>
+                    </div>
                      
              
                   
-                  <div class="col-lg-4 mt-4">
+                    <div class="col-lg-4 mt-4 ComputerScience">
                         <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal08').style.display='block'">
                             <div class="imageContainer">
                                 <img class="card-img-top" src="images/SandiaNationalLabs.png" alt="Card image" style="width:100%">
@@ -213,69 +229,24 @@
                                 </div>
                             </div>
                         </div>
-                                <div id="modal08" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                    <h2 class="w3-text-light-grey" style="text-align: left; ">Applied Social/Cognitive Researcher</h2>
-                                    <hr style="width:200px" class="w3-opacity">
-                                    <p class = "open-body-text"> 
-                                        The summer of 2020 brought a new birth of what was possible for virtual work. As the covid-19 pandemic hit across all parts of the world, humans quickly adapted to its circumstances. 
-                                        <br><br>
-                                        This new stage in the evolution of work brought the question of how virtual teams can effectively collaborate with one another via the computer screen. This question was introduced to me as I worked as an social/applied cognitive research assistant at Sandia National Laboratories under the supervision of <a href="https://maherou.github.io">Mike Heroux</a> and <a href="https://www.sandia.gov/-emraybo/staff/elaine-m-raybourn-ph-d/">Elaine Raybourn</a>. We specifically looked at how software virtual teams could effectively collaborate.
-                                        <br><br>
-                                        This project entailed gathering large ammounts of data and research that was related to software virtual teams. We used Github as our way to collect data. Through the use of Github, we created scholarly "templates" within the repository issues section. As we found interesting scholarly articles and findings, we would then post them onto our shared github repository. At the end of this experience, we created a central repository where individuals interested in understanding virtual collaboration could expand their knowledge. 
-                                        <br>
-                                        <br>
-                                        Through this experience, I developed the following skills:
-                                        <li class = "open-body-bulletpoints"/>Further skills in Git/Github
-                                        <li class = "open-body-bulletpoints"/>Extensive research in the topic of software virtual teams
-                                        <li class = "open-body-bulletpoints"/>Discovery in enhancing virtual team collaboration -- specifically in software teams
-                                        <li class = "open-body-bulletpoints"/>Virtual collaboration within an interdisciplinary community of Psychology, Sociology and Computer Science 
-                                    </p>
-                                </div>
+                                
                     </div>
 
-                    <div class="col-lg-4 mt-4">
+                    <div class="col-lg-4 mt-4 ComputerScience">
                         <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal02').style.display='block'">
-                            <div class = imageContainer> 
-                            <img class="card-img-top" src="images/ARL.png" alt="Card image" style="width:100%">
+                            <div class="imageContainer">
+                                <img class="card-img-top" src="images/ARL.png" alt="Card image" style="width:100%">
                                 <div class="overlay">
                                     <div class="imageCardText">UX/UI Intern</div>
                                 </div>
                             </div>
                         </div>
-                                <div id="modal02" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                    <h2 class="w3-text-light-grey" style="text-align: left; ">UX/UI Intern</h2>
-                                    <hr style="width:200px" class="w3-opacity">
-                                    <p class = "open-body-text"> 
-                                        Over the summer of 2021 I had the opportunity to intern as a User Experience and User Interface developer at the <a href="https://www.arl.psu.edu">Applied Research Laboratory</a> at Penn State. Due to the confidentiality of this project, I am not able to go into specifics on the project. However, I can speak about the things I achieved during this internship and broadly speak about the project. 
-    
-                                        The goal of this project was to help the end users navigate information within an email alerting system. After extensive interviews with the end users of the website, I was able to learn that navigating large amounts of important information embedded in the email was often difficult.
-    
-                                        Due to this finding, my project entailed making an automated HTML email which could highlight important phrases, and confidentiality levels of the information within the email. 
-                                        
-                                        <br>
-                                        <br>
-                                        My main accomplishments during this project involved creating an automated HTML email that used a Natural Language Processor (NLP) to color code important information within the email. 
-    
-                                        At the end of the internship, I was able to implement this new feature within the upcoming release of the website. We received positive feedback from the end users as they were able to easily navigate through large amounts of information that each email sent. 
-                                        <br>
-                                        <br>
-                                        Through this experience, I developed the following skills:
-                                        <li class = "open-body-bulletpoints"/> Natural Processing Languages (NLP)
-                                        <li class = "open-body-bulletpoints"/> Development of automated HTML emails
-                                        <li class = "open-body-bulletpoints"/> Development in JavaScript, CSS, and HTML
-                                        <li class = "open-body-bulletpoints"/> Use of Github/Git in a large scale environment
-                                        <li class = "open-body-bulletpoints"/> Cross collaboration between designers, developers, and customers
-                                        <li class = "open-body-bulletpoints"/> User experience skills through conductions of interviews and data collection
-    
-                                    </p>
-                                </div>
-                        </div>
                        
                     </div>
                 </div>
              <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent" tyle="cursor:grab" onclick="document.getElementById('modal06').style.display='block'">
+                <div class="col-lg-4 mt-4 ComputerScience">
+                    <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal06').style.display='block'">
                         <div class="imageContainer">
                             <img class="card-img-top" src="images/capstone.png" alt="Card image" style="width:100%">
                             <div class="overlay">
@@ -283,26 +254,11 @@
                             </div>
                         </div>
                       </div>    
-                            <div id="modal06" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">Recidivism Algorithms: A Harm or Benefit?</h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text"> 
-                                    Predictive algorithms influence multiple aspects of life. For the most part, these predictive algorithms play a benefit in our society. However, there are cases in which these algorithms can hinder society. Recently, algorithms within the court system have introduced an ethical discussion on how prediction algorithms are used within high-risk scenarios. The Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) is a prediction system aimed to predict recidivism. Recidivism is how likely an individual will re-engage in a crime. 
-
-                                    <br><br>This  project intended to break down the ethical, technical and social dilemma of recidivism algorithms within the court system. Further, it proceeded to analyze societies misconception and blind trust on complex algorithms. I look at the example of COMPAS and analyze its algorithm dataset. At the end, I provide future steps for recidivism prediction algorithms.
-                                    <br><br>
-                                    Through this experience, I developed the following skills:
-                                    <li class = "open-body-bulletpoints"/>Conducting Interviews
-                                    <li class = "open-body-bulletpoints"/>Jupter Notebooks and Python
-                                    <li class = "open-body-bulletpoints"/>Extensive scientific research 
-                                    <li class = "open-body-bulletpoints"/>How to present in front of a large crowd
-                                </p>
-                            </div>
                 </div>
 
  
                   
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 ComputerScience">
                     <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal01').style.display='block'">
                         <div class = "imageContainer">
                             <img class="card-img-top" src="images/inspire.png" alt="Card image" style="width:100%">
@@ -311,28 +267,10 @@
                             </div>
                         </div>
                     </div>
-                    <div id="modal01" class="w3-modal w3-black w3-animate-zoom"  onclick="this.style.display='none'">
-
-
-                            <h2 class="w3-text-light-grey" style="text-align: left; ">INSPIRE Software Engineer Intern </h2>
-                            <hr style="width:200px" class="w3-opacity">
-                            <p class = "open-body-text"> 
-                                Over the Summer of 2023, I had the opportunity to intern at <a href= "https://www.inspiresleep.com">Inspire Medical Systems</a> software development team. Under the supervision of the software development team, I was given the responsibility of doing extensive research on DevOps tools. The purpose of this research was to see how we could transition Inspires recent software development projects into an environment that would allow for Continue Integration (CI) and Continuous Deployment (CD). The result of this approved proposal would allow more swift and efficient deployments on new software products within Inspires company. 
-                                <br>
-                                <br>
-                                My accomplishments involved creating a build pipeline through Azure DevOps that would allow for automatic testing and deployment within each new push of code. Inspires software team integrated this new tool into their most recent software deployment. As a result, programmers are able to automatically test and deploy code through the ease of a GitHub push. 
-                                <br> <br>
-                                Through this experience, I developed the following skills:
-                                <li class = "open-body-bulletpoints"/> How to build software pipelines with Azure DevOps
-                                <li class = "open-body-bulletpoints"/> Collaboration with a large software development team 
-                                <li class = "open-body-bulletpoints"/> Integration of Continuous Development(CD) and Continuous Integration(CI) Tools within a software environment                    
-                            </p>
-                            <!-- <img src="images/inspireInterns.jpeg" class="imagePorfolioProject" alt="Inspire Medical Systems Image" width="300" height="200"> -->
-                    </div>
                 </div>
   
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 ComputerScience">
                     <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal03').style.display='block'" >
                         <div class = "imageContainer">
                         <img class="card-img-top" src="images/oleb-academy-logo.jpeg" alt="Card image" style="width:100%">
@@ -341,28 +279,11 @@
                           </div>
                         </div>
                     </div>     
-                            <div id="modal03" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">OLEB MEDIA</h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text">  
-                                    Within the span of a few months, I had the opportunity to do a short term internship with <a href="https://www.olebmedia.com">Oleb Media</a> as a user experience research intern. I worked one on one with the founder of the company, <a href="https://belocipriani.com">Belo Cipriani</a> as he mentored me on the process of a customer identification case study.  
-
-                                    <br> <br>
-                                    My project with Oleb Media sought to answer this question: Are young professionals willing to pay for a digital inclusion course? Through the use of surveys we received a sample group of respondents that allowed us to analyze that very question. As a result of this analysis, we were able to readjust how Oleb Media was advertising their training courses, and target specific groups of people who may be interested in the course. 
-                                    Through this experience, I developed the following skills:
-                                    <li class = "open-body-bulletpoints"/> User experience research 
-                                    <li class = "open-body-bulletpoints"/> User experience marketing tactics    
-                                    <li class = "open-body-bulletpoints"/> Customer identification case studies
-                                    <li class = "open-body-bulletpoints"/> Analyzation and interpretation of case study data    
-                                </p>
-                            </div>
                 </div>
                      
             </div>
-        </div>
-        <div class="filterDiv SocialJustice">
             <div class="row">
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 SocialJustice">
                     <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal04').style.display='block'">
                         <div class= 'imageContainer'>
                             <img class="card-img-top" src="images/diversebodiesbeautifulminds.png" alt="Card image" style="width:100%">
@@ -371,27 +292,11 @@
                             </div>
                         </div>
                     </div>
-                                <div id="modal04" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                    <h2 class="w3-text-light-grey" style="text-align: left; ">Diverse Bodies, Beautiful Minds: Voices of Disability Activism</h2>
-                                    <hr style="width:200px" class="w3-opacity">
-                                    <p class = "open-body-text"> 
-                                        Over the academic year of 2022-2023 I was a Co-Director for a nonprofit student run documentary team called <a href= "http://www.extendingthelink.com">Extending the Link</a>(ETL). ETL’s project entailed the creation of an interactive film gallery. The interactive film gallery titled Diverse Bodies, Beautiful Minds: Voices of Disability Activism included insights and stories about Disability Activism. Through four short films, we showcased the voices of individuals that identify as disabled and non-disabled - establishing a narrative of authenticity and action. As a community, we joined together to learn through film and dialogue. While this gallery begins by highlighting the foundational goals of disability activism and key forms of resistance, it concludes with an exploration of intersectionality and allyship. 
-    
-                                        <br><br>Diverse Bodies, Beautiful Minds: Voices of Disability Activism, presents a non-traditional way of interacting and viewing film. One which uses physical space as a symbol of reflection that each member must take when presenting an individual's story and expertise. This film uses no alternative footage, but rather focuses on the footage of the interviewers as a means to emphasize the need to focus on the powerful insights each interviewer has to bring. Additionally, this film intends to find alternative ways in which we can incorporate accessibility through the use of captioning, audio captions, and ASL interpretations.
-                                        <br><br>
-                                        Through this experience, I developed the following skills:
-                                        <li class = "open-body-bulletpoints"/>How to conduct interviews 
-                                        <li class = "open-body-bulletpoints"/>How to film and edit documentary style films 
-                                        <li class = "open-body-bulletpoints"/>How to manage a team of more than 30 individuals
-                                        <li class = "open-body-bulletpoints"/>How to cross collaborate with each team within our organization whom included marketing, videography, research, and outreach in order to work together to complete our goal
-                                        <li class = "open-body-bulletpoints"/>Organize an event space in which more than 150 people attended.                                   
-                                    </p>
-                                </div>  
                 </div>
                    
   
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 SocialJustice">
                     <div class="card portfolioContent" style="cursor:grab" onclick="document.getElementById('modal05').style.display='block'">
                         <div class = "imageContainer">
                             <img class="card-img-top" src="images/judyHeumanMiro.png" alt="Card image" style="width:100%">
@@ -400,19 +305,7 @@
                             </div>    
                         </div>
                     </div>      
-                    <div id="modal05" class="w3-modal w3-black w3-animate-zoom" onclick="this.style.display='none'">
-                                <h2 class="w3-text-light-grey" style="text-align: left; ">A Conversation about Disability Awareness, Rights, and Activism with Judy Heumann and Dr. Miro Griffiths </h2>
-                                <hr style="width:200px" class="w3-opacity">
-                                <p class = "open-body-text"> 
-                                    I had the opportunity to be a facilitator for two prominent disability activists. This event had more than 200 individuals attend. <em>A Conversation about Disability Awareness, Rights, and Activism with <a href="https://judithheumann.com">Judy Heumann</a> and <a href="https://essl.leeds.ac.uk/sociology/staff/1040/dr-miro-griffiths">Dr. Miro Griffiths </a></em> highlighted the ongoing fight for equality within the disability community through a global lens. It brought people from different parts of the world together to talk about how individuals can become allies for the disability activism movement. 
-                                    <br> <br>
-                                    Through this experience, I developed the following skills
-                                    <li class = "open-body-bulletpoints"/>Facilitating events
-                                    <li class = "open-body-bulletpoints"/>Virtual communication and connections with world-renown activists
-                                    <li class = "open-body-bulletpoints"/>Organization of large events through research, communication, collaboration and research
-    
-                                </p>
-                    </div>
+
                 </div>
                     
             </div>
@@ -421,14 +314,264 @@
 
     </div>
 </div>
-
-            
     </section>
+    <div id="modal01" class="w3-modal w3-white w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                    <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal01').style.display='none'"></i> 
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style="color:white;">Pioneering Software Evolution at INSPIRE</h3>
+                    <div class="col-lg-12">
+                        <h3 class="h3AboutMeDescription" style="color:white">
+                            Amid the transformative Summer of 2023, I embarked on a compelling chapter as a Software Engineer Intern at <a href="https://www.inspiresleep.com">Inspire Medical Systems</a>. Under the esteemed aegis of the software development team, I was entrusted with a pivotal quest—to unravel the intricate tapestry of DevOps tools. This odyssey was designed to orchestrate the seamless transition of Inspire's nascent software ventures into the realm of Continuous Integration (CI) and Continuous Deployment (CD), fortifying the citadel of swift and efficient software deployment within the company's domain.
+                            <br><br>
+                            My symphony of achievements crescendoed with the birth of a bespoke build pipeline through Azure DevOps—an architectural marvel that harmonized automatic testing and deployment with each code push. The crescendo of innovation resonated as Inspire's software symphony seamlessly embraced this new tool, transmuting the arduous chore of testing and deployment into the graceful choreography of a GitHub push.
+                            <br><br>
+                            The composition of my skills symphony encompassed:
+                            <ul class="open-body-bulletpoints">
+                                <li>The DevOps Overture: I choreographed the construction of software pipelines, entwining the grace of Azure DevOps to orchestrate harmonious CI/CD symphonies.</li>
+                                <li>Harmony in Collaboration: I navigated the vibrant tapestry of collaboration, intertwining my work with a prolific software development ensemble.</li>
+                                <li>The Dance of Integration: I wielded the baton of integration, seamlessly blending the artistry of Continuous Development (CD) and Continuous Integration (CI) tools.</li>
+                            </ul>
+                            As the curtain fell on my INSPIRE odyssey, the resonance of my achievements reverberated through streamlined software deployments, an enduring legacy of my harmonious contributions to the digital symphony of innovation.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="modal02" class="w3-modal w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color:white;" onclick="document.getElementById('modal02').style.display='none'"></i>
+            <h3 class="h3Header" style="color:white;">Revolutionizing User Experiences as a UX/UI Intern</h3>
+            <div class="col-lg-12">
+                <h3 class="h3AboutMeDescription" style="color:white">
+                    In the transformative summer of 2021, I embarked on an immersive journey as a User Experience and User Interface Developer at the Applied Research Laboratory at Penn State. While the intricacies of the project are veiled in confidentiality, the resonance of my achievements and the tapestry of skills woven during this tenure remain as vibrant as ever.
+                    <br><br>
+                    Anchored in the enigma of enhancing user experiences within an email alerting system, I embarked on a quest to reshape how end users interact with vital information. Extensive interviews illuminated the navigational hurdles users faced within the labyrinthine emails. Armed with these insights, my mission unfolded—to craft an automated HTML email infused with the prowess of a Natural Language Processor (NLP), capable of orchestrating a symphony of user-friendly data comprehension.
+                    <br><br>
+                    The crescendo of my accomplishments reverberated through the creation of an automated HTML email, intricately laced with the finesse of NLP. The symphony of color-coded highlights breathed life into the email, gracefully demarcating crucial phrases and layers of confidentiality. As the curtain descended on my internship, this novel feature was seamlessly woven into the fabric of the impending website release.
+                    <br><br>
+                    The orchestration of this transformative venture serenaded me with a harmonious blend of proficiencies:
+                    <ul class="open-body-bulletpoints">
+                        <li>Navigating the Digital Lexicon: I delved into the realm of Natural Language Processing, harnessing its potential to create user-centric email experiences.</li>
+                        <li>Artistry in Code and Design: The intricate dance of JavaScript, CSS, and HTML became my canvas, where I sculpted the symphony of color-coded highlights.</li>
+                        <li>GitHub as the Collaborative Sonata: In a bustling ensemble of developers, I mastered the rhythm of collaboration, orchestrating harmony in a large-scale environment.</li>
+                        <li>The User-Centric Serenade: Armed with insights from interviews and data, I crafted a symphony of user experiences, guided by the crescendo of empathy and insights.</li>
+                    </ul>
+                    As the final curtain unveiled the impact of our endeavors, the applause echoed through positive user feedback, a testament to the resonance of the NLP-infused emails. My odyssey as a UX/UI Intern not only refined my technical prowess but elevated my understanding of the delicate artistry of user-centric design, leaving an indelible mark on the realm of digital experiences.
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal03" class="w3-modal w3-white w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                    <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal03').style.display='none'"></i>
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style="color:white;">OLEB MEDIA</h3>
+                    <div class="col-lg-12">
+                        <h3 class="h3AboutMeDescription" style="color:white">
+                            Embarking on a transformative journey with <a href="https://www.olebmedia.com">Oleb Media</a> as a User Experience Research Intern, I delved into the intricate realms of digital inclusion under the mentorship of the visionary founder, <a href="https://belocipriani.com">Belo Cipriani</a>. Over the course of a few transformative months, I honed my skills while orchestrating a profound shift in how we perceive digital accessibility and inclusion.
+                            <br><br>
+                            At the heart of my project was a pivotal question: Do young professionals recognize the value of investing in digital inclusion training? Guided by this inquiry, I meticulously designed and administered surveys, unfurling a tapestry of insights from a diverse array of respondents. Our analysis ignited a paradigm shift within Oleb Media's approach, realigning the trajectory of our training courses and resonating with a targeted audience that sought to embark on a journey towards digital empowerment.
+                            <br><br>
+                            My efforts weren't confined to spreadsheets and surveys; I unveiled the power of visual storytelling through accessible videos that cascaded across social media platforms. These videos, seamlessly interwoven with our marketing efforts, catalyzed engagement, capturing the essence of our mission and igniting a palpable excitement that spurred sign-ups for our digital inclusion courses.
+                            <br><br>
+                            Collaborating synergistically with digital inclusion strategists, I harnessed the potency of user studies to distill invaluable insights. These insights, meticulously gleaned through astute research methodologies, transcended data points; they were beacons illuminating the path towards optimizing program effectiveness and fostering an environment where inclusion isn't just a concept, but an experiential reality.
+                            <br><br>
+                            Through my enriching tenure at Oleb Media, I nurtured the following proficiencies:
+                            <ul class="open-body-bulletpoints">
+                                <li>Conducting User-Centric Symphony: I ventured into the realm of user experience research, meticulously crafting surveys that unearthed invaluable perspectives and shaping Oleb Media's trajectory.</li>
+                                <li>Strategic UX Marketing: Harnessing the power of accessible videos, I captivated audiences across social media, sculpting an engaging narrative that kindled curiosity and propelled action.</li>
+                                <li>Illuminating User Journeys: Collaborating with digital inclusion strategists, I co-authored illuminating user studies, infusing strategic insights that guided program optimization and transformation.</li>
+                                <li>Interpreting Insights: With a discerning eye, I delved into the heart of case study data, extracting actionable insights that forged the path towards greater inclusivity and empowerment.</li>
+                            </ul>
+                            The Oleb Media chapter of my journey epitomizes the harmonious fusion of technology, empathy, and strategic ingenuity—a chapter dedicated to pioneering a new era of digital accessibility, one that empowers individuals to thrive in a connected world.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="modal04" class="w3-modal w3-white w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                    <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal04').style.display='none'"></i>
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style="color:white;">Diverse Bodies, Beautiful Minds: Voices of Disability Activism</h3>
+                    <div class="col-lg-12">
+                        <h3 class="h3AboutMeDescription" style="color:white">
+                            Empowered by purpose, I embarked on a transformative journey as the Co-Director of a visionary nonprofit endeavor—<a href="http://www.extendingthelink.com">Extending the Link</a> (ETL). Our mission transcended the ordinary, as we wove the fabric of an interactive film gallery titled "Diverse Bodies, Beautiful Minds: Voices of Disability Activism." This remarkable narrative symphony resonates with the authentic stories of individuals who embody the spirit of disability activism, both disabled and non-disabled, uniting their voices in a powerful tapestry of authenticity and advocacy.
+                            <br><br>
+                            At the heart of this initiative, four captivating short films stood as testaments to resilience and empowerment. This endeavor was an exploration of the very essence of disability activism, illuminating its foundational tenets and the indomitable spirit that propels it forward. Yet, it didn't stop there—our gaze extended towards the horizon of intersectionality and allyship, a reflection of the dynamic evolution that defines the disability activism movement.
+                            <br><br>
+                            "Diverse Bodies, Beautiful Minds" wasn't merely a film gallery; it was an invitation to engage, to ponder, and to evolve. It redefined the very experience of cinematic storytelling, crafting an immersive environment where physical space mirrored the introspective journey each viewer embarked upon. Our innovative approach transcended traditional conventions, utilizing the interviewers' authentic presence as the canvas upon which these poignant narratives were painted.
+                            <br><br>
+                            My role extended beyond the reels, encompassing the orchestration of a harmonious symphony of more than 30 dedicated individuals. I skillfully navigated the realms of interview conducting, documentary filming and editing, all while seamlessly managing a diverse team. Our interdisciplinary harmony was orchestrated through seamless cross-collaboration, uniting marketing, videography, research, and outreach, culminating in a triumphant crescendo that resonated with over 150 attendees at a meticulously organized event space.
+                            <br><br>
+                            Through this transformative odyssey, my skills flourished:
+                            <ul class="open-body-bulletpoints">
+                                <li>Mastering the Art of Interviews: Channeling empathy and curiosity, I unearthed profound narratives, capturing the essence of each participant's journey with finesse.</li>
+                                <li>Cinematic Alchemy: Crafting evocative visual narratives, I navigated the realms of filming and editing, breathing life into stories that inspire change.</li>
+                                <li>Leadership that Inspires: As a co-director, I orchestrated a harmonious ensemble, nurturing a culture of collaboration, dedication, and shared purpose.</li>
+                                <li>Interdisciplinary Collaboration: Skillfully weaving the threads of diverse talents, I harmonized cross-functional teams to compose a symphony of impact.</li>
+                                <li>Event Mastery: Orchestrating an event that resonated with over 150 souls, I orchestrated an immersive space for dialogue, transformation, and empowerment.</li>
+                            </ul>
+                            In the union of artistry, activism, and leadership, "Diverse Bodies, Beautiful Minds" etched a profound mark—a testament to the change that takes root when passion converges with purpose. This gallery is more than a collection of stories; it is a radiant beacon, illuminating the path towards a world where all voices are heard, acknowledged, and celebrated.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="modal05" class="w3-modal w3-white w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                    <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal05').style.display='none'"></i>
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style="color:white;">A Conversation about Disability Awareness, Rights, and Activism with Judy Heumann and Dr. Miro Griffiths</h3>
+                    <div class="col-lg-12">
+                        <h3 class="h3AboutMeDescription" style="color:white">
+                        Stepping onto the global stage of disability advocacy, I assumed the role of facilitator for a momentous convergence—one that echoed with the resounding voices of change. "A Conversation about Disability Awareness, Rights, and Activism" served as a dynamic platform where the impassioned narratives of two luminaries, <em><a href="https://judithheumann.com">Judy Heumann</a></em> and <em><a href="https://essl.leeds.ac.uk/sociology/staff/1040/dr-miro-griffiths">Dr. Miro Griffiths</a></em>, converged to illuminate the path towards equality within the disability community.
+                        <br><br>
+                        This transformative event transcended geographical boundaries, uniting over 200 individuals from diverse corners of the world. As the event's orchestrator, I facilitated a space for profound dialogues and poignant reflections, cultivating a shared commitment to the cause of disability activism. Together, we delved into the heart of advocacy, shedding light on how each individual can metamorphose into a steadfast ally within this dynamic movement.
+                        <br><br>
+                        Through this remarkable journey, my skills flourished:
+                        <ul class="open-body-bulletpoints">
+                            <li>Facilitating Events: Guiding conversations with finesse, I carved out a platform where ideas flowed, and narratives interwove, fostering a tapestry of transformation.</li>
+                            <li>Virtual Communication and Global Connections: Bridging the expanse of cyberspace, I harnessed the power of digital connectivity to unite activists from around the globe, amplifying voices that resonate across continents.</li>
+                            <li>Organizing Grand Endeavors: From ideation to execution, I navigated the labyrinth of event organization, intertwining research, communication, collaboration, and meticulous planning into a symphony of purpose.</li>
+                        </ul>
+                        In a world that yearns for understanding and inclusivity, this event served as a beacon—an embodiment of the change that ripples when passionate voices converge. Together, we authored a chapter of empowerment, solidarity, and a renewed commitment to championing the rights and dignity of the disability community.
+                        </h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <div id="modal06" class="w3-modal w3-white w3-animate-zoom">
+                    
+        <div class="container mt-4 pt-4" style = "background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal06').style.display='none'"></i> 
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style = "color:white;">Recidivism Algorithms: A Harm or Benefit?</h3>
+                    <div class="col-lg-12">
+                        <h3 class="h3AboutMeDescription" style="color:white">
+                        Within the tapestry of predictive algorithms that shape our lives, a thought-provoking discourse arises—one that unveils the potent interplay between benefit and ethical conundrums. In the backdrop of this narrative, the enigmatic dance of recidivism prediction algorithms within our court systems emerges as a focal point. At the crossroads of technology and justice, I embarked on a journey to unravel the intricate threads of this discourse, questioning the very fabric of societal trust in complex algorithms.
+                        <br><br>
+                        My endeavor began by peering behind the veil of the Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) algorithm—a predictive sentinel, foretelling the likelihood of recidivism. This algorithm, heralded for its potential to shape rehabilitation efforts, also casts shadows of doubt on the fairness and transparency of its predictions. My quest was to dissect the ethical, technical, and social dimensions of this digital oracle, igniting conversations on the nexus of ethics and algorithms.
+                        <br><br>
+                        Delving into the realm of data and discourse, I unveiled the layers that conceal the truths and fallacies of recidivism prediction. Through meticulous interviews, I ventured into the psyche of those entwined in the criminal justice system, acquiring insights that illuminated the potential biases and disparities enshrouded within. Armed with Jupyter Notebooks and the symphony of Python, I embarked on an analytical journey, peeling back the layers of data to reveal the inner workings of COMPAS.
+                        <br><br>
+                        In the crucible of research, I scrutinized not only algorithmic datasets, but also societal misconceptions that enrobe these digital augurs with unwavering trust. My journey transcended the realm of bits and bytes; it encompassed the art of articulation and knowledge dissemination. As I stood before diverse audiences, I wielded the power of presentation, distilling intricate findings into palatable wisdom.
+                        <br><br>
+                        This odyssey unfurled a tapestry of skills:
+                        <ul class="open-body-bulletpoints">
+                            <li>Conducting Interviews: Peering into the hearts of individuals within the justice system, unraveling narratives that enrich the discourse.</li>
+                            <li>Jupyter Notebooks and Python: Navigating the labyrinth of data, orchestrating a harmonious symphony of code and computation.</li>
+                            <li>Extensive Scientific Research: Sifting through the sands of scholarly wisdom, weaving an intricate tapestry of insights and knowledge.</li>
+                            <li>The Art of Presentation: Conveying complex revelations with eloquence, captivating minds, and sparking transformative conversations.</li>
+                        </ul>
+                        In this journey, the algorithmic labyrinth met the crucible of ethical contemplation, and through exploration, analysis, and presentation, I championed the cause of an informed society—one that navigates the waters of technology with discernment and compassion.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal07" class="w3-modal w3-white w3-animate-zoom">
+        <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+            <div class="row mt-4">
+                <div class="col-lg-1">
+                    <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal07').style.display='none'"></i>
+                </div>
+                <div class="col-lg-11">
+                    <h3 class="h3Header" style="color:white;">Revolutionizing Nursing Education: Bridging the Virtual Gap</h3>
+                </div>
+                <div class="col-lg-12">
+                    <h3 class="h3AboutMeDescription" style="color:white">
+                        In the tumultuous landscape of 2020, a seismic shift reshaped education, thrusting students into virtual classrooms and robbing them of tangible experiences. Amidst this transition, nursing students found themselves at a crossroads, yearning for the real-world exposure vital to their profession. The absence of hands-on hospital encounters loomed as a concern, beckoning for an innovative response.
+                        <br><br>
+                        Galvanized by a collective determination, I joined forces with a cohort of astute Computer Science visionaries. Our quest: to metamorphose the virtual realm and infuse it with the essence of reality. Through deep-dive interviews with nursing faculty and students, we unearthed the crucible of challenges. An imperative arose—to bestow upon students the gift of experiential learning, within the confines of a digital realm.
+                        <br><br>
+                        Fueled by collaboration with the nursing department, we birthed a virtual simulation website—a conduit to traverse the frontiers of clinical scenarios. This digital haven, a "choose-your-own-path" odyssey, enveloped budding nursing talents in a tapestry of real-world challenges. Each click unfurled a new vista of decision points, mirroring the intricate tapestry of reality.
+                        <br><br>
+                        The symphony of innovation was not just confined to design, but to the realm of meticulous coding. An elegant dance between Ruby on Rails and ingenious UX methodologies, the website emerged as a paragon of usability and user satisfaction. Methodical research, candid user interviews, and rigorous usability tests guided our journey, ensuring an intuitive user experience.
+                        <br><br>
+                        As the digital phoenix rose from the ashes of limitations, so did my skills:
+                        <ul class="open-body-bulletpoints">
+                            <li>Breathed life into a Ruby on Rails website, crafting a virtual haven that bridged the chasm between aspiration and experience.</li>
+                            <li>Forged an alliance with the Nursing department, weaving their insights with the art of coding to birth a virtual marvel.</li>
+                            <li>Infused the website with a seamless UX, a testament to meticulous research, user interviews, and rigorous usability testing.</li>
+                            <li>Navigated the tumultuous seas of collaboration, emerging not only with a functional website but with a deeper understanding of interdisciplinary synergies.</li>
+                        </ul>
+                        In the crucible of innovation and empathy, a digital sanctuary emerged, redefining virtual education and affirming that, even in the face of adversity, knowledge knows no bounds.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<div id="modal08" class="w3-modal w3-animate-zoom" >
+    <div class="container mt-4 pt-4" style="background-color: #f3e1c9;">
+        <div class="row mt-4">
+            <div class="col-lg-1">
+                <i class="fa fa-close" style="cursor:grab; font-size: 5rem; color: white;" onclick="document.getElementById('modal08').style.display='none'"></i>
+            </div>
+            <div class="col-lg-11">
+                <h3 class="h3Header" style="color:white;">Applied Social/Cognitive Researcher</h3>
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="h3AboutMeDescription" style="color:white">
+                    In the dynamic summer of 2020, amidst the global embrace of virtual interactions catalyzed by the pandemic, I embarked on an invigorating journey as an Applied Social/Cognitive Researcher at Sandia National Laboratories. Together with luminaries like <a href="https://maherou.github.io">Mike Heroux</a> and <a href="https://www.sandia.gov/-emraybo/staff/elaine-m-raybourn-ph-d/">Elaine Raybourn</a>, I delved into the realm of virtual team collaboration with a laser focus on software virtual teams.
+                    <br><br>
+                    Armed with determination, we ventured into the digital domain of Github, orchestrating an ingenious symphony of data collection. Our innovative strategy involved curating scholarly "templates" within the repository's issues section. These templates became our canvases, adorned with meticulously gathered articles and insights. As our digital repository burgeoned, we kindled a beacon for inquisitive minds eager to explore the nuances of virtual collaboration.
+                    <br><br>
+                    This endeavor was a crucible of growth, refining my skills and shaping my expertise:
+                    <ul class="open-body-bulletpoints">
+                        <li>Forged a profound mastery of Git/Github, harnessing its power to orchestrate collaborative symphonies.</li>
+                        <li>Embarked on an odyssey of research, traversing the landscape of software virtual teams, and unveiling hidden gems of knowledge.</li>
+                        <li>Architected pathways to enhance virtual team synergy, cultivating a tapestry of collaboration in software spheres.</li>
+                        <li>Flourished in the crossroads of Psychology, Sociology, and Computer Science, weaving insights from diverse disciplines into a harmonious fabric of understanding.</li>
+                    </ul>
+                    The culmination of this expedition was more than a repository; it was a testament to the boundless potential of virtual collaboration, a tribute to the power of interdisciplinary pursuits. Regular rendezvous with Human Factor Social Scientists catalyzed an exchange of insights, sculpting the project's trajectory towards innovation and effectiveness.
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- contact section-->
     <section id="contact">
         <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
+            <h3 class="h3Header" Style = "color: #f3e1c9;">Contact Me</h3>
 
             <div class="row mt-4">
                 <div class="col-lg-6">
@@ -476,51 +619,62 @@
     </footer>
         
 </body>
-<script>filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+<script>
+function filterSelection(category) {
+  var projects = document.querySelectorAll('.portfolioContent');
+
+  if (category === 'all') {
+    projects.forEach(function(project) {
+      project.style.display = 'block';
+    });
+  } else {
+    projects.forEach(function(project) {
+      if (project.classList.contains(category)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
       }
+    });
+  }
+}
+
+// Set the default filter
+filterSelection('all');
+    const navbar = document.querySelector(".navbarScroll");
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    navbar.classList.remove("scrolled");
+    } else {
+    navbar.classList.add("scrolled");
     }
+    prevScrollpos = currentScrollPos;
     
-    // Show filtered elements
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
+}
+
+function toggleImages() {
+    var hiddenRows = document.querySelectorAll('.dream[style="display: none;"]');
+    var visibleRows = document.querySelectorAll('.dream:not([style="display: none;"])');
+    
+    var toggleButtonText = document.getElementById('toggleButtonText');
+    
+    if (hiddenRows.length > 0) {
+        hiddenRows.forEach(function(row, index) {
+            row.style.display = 'flex';
+            if ((index + 1) % 3 === 0) {
+                row.style.marginRight = '0';
+            }
+        });
+        toggleButtonText.textContent = 'See Less';
+    } else {
+        for (var i = 3; i < visibleRows.length; i++) {
+            visibleRows[i].style.display = 'none';
         }
-      }
+        toggleButtonText.textContent = 'See More';
     }
-    
-    // Hide elements that are not selected
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1); 
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-    
-    // Add active class to the current control button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }</script>
+}
+
+</script>
 </html>
