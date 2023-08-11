@@ -134,7 +134,13 @@ color: #f9f3df;
     position:relative;
     
 }
-
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .hero_desc {
     font-size: 2rem;
@@ -287,7 +293,7 @@ color: #f9f3df;
     text-align: center;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color:  #FFAA5C;
+    color:  black;
 }
 .fab {
     color: #f9f3df;
