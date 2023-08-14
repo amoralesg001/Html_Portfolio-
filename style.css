@@ -45,6 +45,7 @@ color: #f9f3df;
   font-family: ivypresto-display, serif;
   font-weight: 300;
   font-style: normal;
+  padding-bottom: 30px;
   color: #f9f3df;
     position: relative; 
     display: inline-block; 
@@ -52,6 +53,28 @@ color: #f9f3df;
     transform: matrix(1, 0, 0, 1, 0, 0);
     display: inline-block; 
   }
+  .text-center {
+    text-align: center;
+}
+  .h3ProjectDescription{
+    font-size: 22 px;
+    font-family: ivypresto-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: white;
+      display: inline-block; 
+      display: flex;
+      flex-direction: column;
+    }
+
+  .align-vertically {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
   /* Hide the "See Less" button initially */
 #seeLessBtn {
@@ -63,8 +86,8 @@ color: #f9f3df;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%; /* Adjust size as needed */
-  padding-bottom: 80%; /* Maintain a square aspect ratio */
+  width: 100%; /* Adjust size as needed */
+  padding-bottom: 100%; /* Maintain a square aspect ratio */
   border-radius: 50%;
   margin: 0 auto;
   background: url('images/IMG_8133.jpg') center top / cover no-repeat;
@@ -219,7 +242,10 @@ color: #f9f3df;
 }
 .imageCardText{
   color:  #ffffff;
+  font-family: ivypresto-display, serif;
   font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,6 +254,7 @@ color: #f9f3df;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 .card-body:hover {
     background-color: #ffffff;
@@ -243,10 +270,7 @@ color: #f9f3df;
   background-color:#f3e1c9;
 }
 
-.imageCardText {
- /* Replace with your preferred system font */
-  font-weight: bold;
-}
+
 
 .card-body:hover {opacity: 1}
 .card:hover .ArtIcon {
@@ -426,6 +450,12 @@ padding-left: 80px;
     display: inline-block;
     padding: 0 15px;
   }
+  .nav-item.active:hover {
+    background-color: #fff; /* Change this to the desired highlight color */
+}
+.nav-item:hover {
+  background-color: #fff; /* Change this to the desired highlight color */
+}
   
   .nav-link {
     color: #000000;
