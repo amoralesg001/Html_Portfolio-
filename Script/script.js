@@ -54,16 +54,5 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-const navbar = document.querySelector(".navbarScroll");
-let prevScrollpos = window.pageYOffset;
 
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    navbar.classList.remove("scrolled");
-  } else {
-    navbar.classList.add("scrolled");
-  }
-  prevScrollpos = currentScrollPos;
-};
 
