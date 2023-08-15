@@ -1,10 +1,9 @@
 /* text css above hero image*/
 .h1HomeText{
-  font-size: 10vw;
+  font-size: 11.734126984126984vw;
   font-family: "ivypresto-display", serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: Regular;
-  color: #000000;
   position: relative; 
   text-align: center;
   padding: 20px;
@@ -14,7 +13,7 @@
 }
 
 .h2HomeText{
-  font-size: 4vw;
+  font-size: 4.482142857142857vw;
   font-family: "ivypresto-display", serif;
   font-style: normal;
   color: #f9f3df;
@@ -23,7 +22,6 @@
   display: inline-block; 
   z-index: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
   display: block; 
 }
 
@@ -154,7 +152,7 @@ color: #f9f3df;
     height:100vh;
     background: url('images/newHome.jpg');
     background-size:cover;
-    position:relative;
+    position: relative;
     
 }
 .banner-text {
@@ -317,7 +315,7 @@ color: #f9f3df;
     text-align: center;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color:  black;
+    color: #e8b470;
 }
 .fab {
     color: #f9f3df;
