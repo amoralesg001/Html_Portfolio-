@@ -10,6 +10,7 @@
   display: inline-block; 
   z-index: 0;/* Add a black border around each letter */
   transform: matrix(1, 0, 0, 1, 0, 0);
+  color:  #643c3c;
 }
 
 .h2HomeText{
@@ -30,7 +31,6 @@ font-size: 7vw;
 font-family: ivypresto-display, serif;
 font-weight: 800;
 font-style: normal;
-color: #f9f3df;
   position: relative; 
   display: inline-block; 
   z-index: 0;
@@ -205,7 +205,7 @@ color: #f9f3df;
     color: #ffffff;
 }
 .card-body{
-        background-color: #303030;
+        background-color: #643c3c;;
         border: none;
         color: white;
         padding: 16px 32px;
@@ -315,7 +315,7 @@ color: #f9f3df;
     text-align: center;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #e8b470;
+    color: #643c3c;;
 }
 .fab {
     color: #f9f3df;
@@ -373,9 +373,9 @@ padding-left: 80px;
     cursor: pointer;
     
   }
-  
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
+
+   /* Add a light grey background on mouse-over */
+   .btn:hover {
     background-color: #ddd;
   }
   
