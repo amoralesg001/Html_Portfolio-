@@ -61,7 +61,7 @@ font-style: normal;
     font-style: normal;
     line-height: 1.5;
     padding-bottom: 30px;
-    color: white;
+    color: #643c3c;
       display: inline-block; 
       display: flex;
       flex-direction: column;
@@ -179,12 +179,12 @@ font-style: normal;
 }
 /* display background color black on navbar scroll */
 .navbarScroll{
-    background-color: black;
-    background-color: transparent; /* Set a transparent background for the navigation */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  position: fixed; /* Make the navigation bar fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it take the full width of the viewport */
+  background-color: #FFF7ED; /* Set the background color to white */
+  z-index: 1000; /* Ensure it appears above other content */
+
 }
 /* Art section css */
 .ArtText.card {
@@ -239,7 +239,7 @@ font-style: normal;
   opacity: 1;
 }
 .imageCardText{
-  color:  #ffffff;
+  color:  #643c3c;
   font-family: ivypresto-display, serif;
   font-size: 20px;
   font-weight: 300;
@@ -414,7 +414,6 @@ padding-left: 80px;
     top: 0;
     left: 0;
     right: 0;
-    background-color: transparent;
     z-index: 1; /* Add this line to place the navigation behind the hero text */
   
   }
@@ -449,10 +448,10 @@ padding-left: 80px;
     padding: 0 15px;
   }
   .nav-item.active:hover {
-    background-color: #fff; /* Change this to the desired highlight color */
+    background-color: #F3E1C9; /* Change this to the desired highlight color */
 }
 .nav-item:hover {
-  background-color: #fff; /* Change this to the desired highlight color */
+  background-color: #F3E1C9; /* Change this to the desired highlight color */
 }
   
   .nav-link {
@@ -465,12 +464,3 @@ padding-left: 80px;
   }
 
   
-  /* Show the navbar on top */
-  .navbarScroll {
-    transform: translateY(0);
-  }
-  
-  /* Hide the navbar when scrolling down */
-  .navbarScroll.scrolled {
-    transform: translateY(-100%);
-  }
