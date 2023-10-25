@@ -91,6 +91,7 @@ font-style: normal;
   background: url('images/IMG_8133.jpg') center top / cover no-repeat;
 }
 
+
 .circular-photo {
   width: 100%;
   height: 100%;
@@ -315,10 +316,10 @@ font-style: normal;
     text-align: center;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #643c3c;;
+    color: #f9f3df;
 }
 .fab {
-    color: #f9f3df;
+    color: #643c3c; 
 }
 /* footer styling */
 #footer {
